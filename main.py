@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 app = FastAPI(title="Customer Churn Prediction API")
-model = joblib.load("model.pkl")
+model = joblib.load("xgb_model.pkl")
 
 class CustomerData(BaseModel):
     account_age_months: float
